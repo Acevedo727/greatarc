@@ -26,9 +26,9 @@ class Location:
 
         if unit == "km":
         distance = radius_km * c
-        elif unit == "miles":
+elif unit == "miles":
         distance = radius_mi * c
-        else:
+else:
         raise ValueError("Unit must be 'km' or 'miles'")
         
         return distance
