@@ -25,12 +25,13 @@ class Location:
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
         if unit == "km":
-        distance = radius_km * c
-elif unit == "miles":
-        distance = radius_mi * c
-else:
-        raise ValueError("Unit must be 'km' or 'miles'")
-        
+            distance = radius_km * c
+        elif unit == "miles":
+            distance = radius_mi * c
+        else:
+            raise ValueError("Unit must be in 'km' or 'miles'")
+
+
         return distance
 
 
